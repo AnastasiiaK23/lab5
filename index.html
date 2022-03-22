@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Климко А.І. ЗПІ-зп01</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="keywords" content="Климко, ЗПІ-зп01" />
+	<meta name="description" content="Інформація про студентку, Климко Анастасія">
+</head>
+<body>
+	<script src="script.js"></script>
+    <p><h2>Климко Анастасія Ігорівна</h2><p>
+	<p>Дата народження: 23 червня, 1990 року<p>
+	<p>Місце народження: м. Вишгород<p>
+	<p>Освіта: ЗОШ І-ІІІст. №1, м. Вишгород; КМУ УАНМ, м. Київ; НТУУ "КПІ", м. Київ <p>
+	<p>Хоббі:<p>
+	<ul>
+		<li>Фото</li>
+		<li class="clickme" onclick=changeBg() ondblclick=changeBg3()>Живопис</li>
+		<li class="click" onclick=changeBg1() ondblclick=changeBg2()>Книжки</li>
+	</ul>
+	
+	
+	<p>Улюблені фільми:<p>
+	<ol>
+		<li>"Пасажири", 2016</li>
+		<li>"Інтерстеллар", 2014</li>
+		<li>"П'ятий елемент", 1997</li>
+	</ol>
+	
+	<p>Барселона – столиця автономної області Каталонія.
+	<br> Це багатонаціональне місто відоме своєю архітектурою та мистецтвом. <br>Одні з головних визначних пам'яток – будівлі архітектора Антоніо Гауді, наприклад храм Святої Сімейства.<br>Також у місті знаходяться музеї сучасного мистецтва: Музей Пікассо та Фонд Жоана Міро.<br>У Музеї історії Барселони можна подивитися не тільки експонати, що належать до римського періоду, <br>але й місця археологічних розкопок у підземній частині.<p>
+	<a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%80%D1%81%D0%B5%D0%BB%D0%BE%D0%BD%D0%B0" >
+	<img src="https://barcelonatm.ru/wp-content/uploads/2016/05/centr-barselony-2-2.jpg"
+		height = 400,  width = 700></a><br>
+       
+       <button onclick="zoom()">Збільшити</button>
+       <button onclick="zoomout()">Зменшити</button>
+       <input type="button" value="Додати/Видалити" id="buttom">
+
+<script>
+window.onload = function ()
+{
+var img = new Image();
+img.src = "https://multi-viza.com.ua/wp-content/uploads/2017/11/barselona-gorod-dostoprimechatelnosti.jpg";
+var pc = document.getElementById("pic_cntr");
+buttom.onclick = function()
+{
+img.parentNode ? img.remove() : pc.appendChild(img);
+}
+}
+</script>
+<div id='pic_cntr'></div>
+
+
+</body>
+</html>
